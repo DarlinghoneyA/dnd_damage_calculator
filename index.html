@@ -30,49 +30,51 @@
     </div>
     <!-- Navbar End -->
     <div class="container d-flex justify-content-center align-items-center px-5 py-5">
-        <p style="font-size: 100px;">DND Damage calculation</p>
+        <h1 class="display-1 text-center fw-bold">DND Damage calculation</h1>
     </div>
-    <div class="mb-3 d-flex justify-content-evenly">
-        <div>
-            <label for="numberInput" class="form-label">กรุณาใส่จำนวณลูกเต๋า (1-100)</label>
-            <input 
-                type="number" 
-                class="form-control" 
-                id="numberInput" 
-                min="1" 
-                max="100" 
-                placeholder="1-100"
-                required>
-        </div>
-        <div>
-            <label for="Dice-type" class="form-label">เลือกประเภทลูกเต๋า</label>
-            <select class="form-select" id="Dice-type" aria-label="Dice-type Select">
-            <option selected>Open this select menu</option>
-            <option value="1">D4</option>
-            <option value="2">D6</option>
-            <option value="3">D8</option>
-            <option value="4">D10</option>
-            <option value="5">D12</option>
-            <option value="6">D20</option>
-            </select>
-        </div>
-        <div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="abilities[]" value="GWF" id="checkGreatWeapon">
-                <label class="form-check-label" for="checkDefault">
-                    Great Weapon Fighting
-                </label>
+    <div class="container">
+        <div class="row justify-content-evenly align-items-center">
+            <div class="col-lg-3 col-md-6 c0l-sm-12 mb-3">
+                <label for="numberInput" class="form-label">กรุณาใส่จำนวณลูกเต๋า (1-100)</label>
+                <input 
+                    type="number" 
+                    class="form-control" 
+                    id="numberInput" 
+                    min="1" 
+                    max="100" 
+                    placeholder="1-100"
+                    required>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="abilities[]" value="SA" id="checkSavage">
-                <label class="form-check-label" for="checkDefault">
-                    Savage Attacker
-                </label>
+            <div class="col-lg-3 col-md-6 c0l-sm-12 mb-3">
+                <label for="Dice-type" class="form-label">เลือกประเภทลูกเต๋า</label>
+                <select class="form-select" id="Dice-type" aria-label="Dice-type Select">
+                <option selected>Open this select menu</option>
+                <option value="1">D4</option>
+                <option value="2">D6</option>
+                <option value="3">D8</option>
+                <option value="4">D10</option>
+                <option value="5">D12</option>
+                <option value="6">D20</option>
+                </select>
+            </div>
+            <div class="col-lg-3 col-md-6 c0l-sm-12 mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="abilities[]" value="GWF" id="checkGreatWeapon">
+                    <label class="form-check-label" for="checkDefault">
+                        Great Weapon Fighting
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="abilities[]" value="SA" id="checkSavage">
+                    <label class="form-check-label" for="checkDefault">
+                        Savage Attacker
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 c0l-sm-12 mb-3">
+                <button type="button" class="btn btn-primary">calculation</button>
             </div>
         </div>
-        <button type="button" class="btn btn-primary">calculation</button>
-        
-        
     </div>
     <!-- bootstap javascript -->
      <script src="script.js"></script>
