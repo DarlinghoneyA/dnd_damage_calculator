@@ -1,0 +1,10 @@
+/* ใช้คลาส .no-validate ที่เราสร้างขึ้นมาเพื่อกันไม่ให้มันโดน Validation */
+.was-validated .no-validate .form-check-input:valid,
+.was-validated .no-validate .form-check-input:invalid {
+    border-color: #dee2e6 !important; /* บังคับให้เป็นสีเทา */
+    background-image: none !important;
+}
+
+.was-validated .no-validate .form-check-label {
+    color: #212529 !important; /* บังคับให้เป็นสีดำ */
+}
